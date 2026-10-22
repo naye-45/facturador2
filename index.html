@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturador 2.0</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main class="tarjeta">
+    <h1>Facturador 2.0</h1>
+    <p class="sub">Descuentos, envío y pago en cuotas</p>
+
+    <label for="producto">Producto</label>
+    <input type="text" id="producto" placeholder="Ej.: Teclado mecánico">
+
+    <div class="fila">
+      <div>
+        <label for="precio">Precio unitario (USD)</label>
+        <input type="number" id="precio" min="0" step="0.01" placeholder="Ej.: 25.00">
+      </div>
+      <div>
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" min="1" step="1" value="1">
+      </div>
+    </div>
+
+    <div class="fila">
+      <div>
+        <label for="envio">Envío</label>
+        <select id="envio">
+          <option value="retiro">Retiro en el local</option>
+          <option value="cuenca">Envío dentro de Cuenca</option>
+          <option value="nacional">Envío nacional</option>
+        </select>
+      </div>
+      <div>
+        <label for="cuotas">Forma de pago</label>
+        <select id="cuotas">
+          <option value="1">Contado</option>
+          <option value="3">3 cuotas</option>
+          <option value="6">6 cuotas</option>
+        </select>
+      </div>
+    </div>
+
+    <button id="btnCalcular">Calcular</button>
+
+    <section id="resultado" class="resultado">
+      <p>Ingresa los datos y presiona <strong>Calcular</strong>.</p>
+    </section>
+  </main>
+</body>
+</html>

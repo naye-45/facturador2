@@ -1,0 +1,47 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px 0;
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+  color: #1f2937;
+}
+.tarjeta {
+  width: min(480px, 92vw);
+  background: #fff;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+}
+h1 { margin: 0; font-size: 1.6rem; }
+.sub { margin: 4px 0 16px; color: #6b7280; }
+.fila { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+label { display: block; margin-top: 12px; font-weight: bold; font-size: .9rem; }
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+}
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #f0b429;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover { background: #de9b0b; }
+.resultado { margin-top: 20px; padding: 14px; border-radius: 8px; background: #f8fafc; }
+.resultado p { margin: 6px 0; }
+.linea { display: flex; justify-content: space-between; margin: 6px 0; }
+.descuento { color: #15803d; }
